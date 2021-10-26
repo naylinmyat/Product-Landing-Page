@@ -1,0 +1,203 @@
+:root{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+body{
+    background: white;
+    color: goldenrod;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    border-bottom: 3px solid goldenrod;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+#header-img{
+    height: 5rem;
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+#nav-bar ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    justify-content: space-around;
+    
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+#nav-bar ul li a:hover{
+    background: goldenrod;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 16.5vh;
+}
+#hero h2{
+    padding: 3px;
+    border: 2px solid goldenrod;
+    box-shadow: 4px 8px 16px rgba(146, 141, 141, 0.89);
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+#form #email{
+    width: 30%;
+    height: 3vh;
+    border: 2px solid goldenrod;
+    outline: none;
+    box-shadow: 4px 8px 16px rgba(146, 141, 141, 0.89);
+}
+#form #submit{
+    width: 10%;
+    height: 4vh;
+    background: goldenrod;
+    border: none;
+    box-shadow: 4px 8px 16px rgba(146, 141, 141, 0.89);
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+}
+#form #submit:hover{
+    background: black;
+    color: goldenrod;
+}
+
+#container{
+    margin-bottom: 20vh;
+}
+#selection img{
+    width: 100%;
+    height: auto;
+}
+#container p{
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 4px 8px 16px rgba(236, 186, 93, 0.89);
+    padding: 5px;
+}
+#selection .color-container{
+    display: flex;
+    width: 20%;
+    height: auto;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+#selection .select-color{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    box-shadow: 4px 8px 16px rgb(70, 67, 67);
+}
+#selection .select-color:hover{
+    border: 3px solid goldenrod;
+}
+#selection .black{
+    background: rgb(20, 20, 20);
+}
+#selection .white{
+    background: white;
+}
+#selection .red{
+    background: red;
+}
+
+#review{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15vh;
+}
+#video{
+    border: 5px solid goldenrod;
+    box-shadow: 8px 16px 32px rgb(70, 67, 67);
+}
+
+#pricing{
+    display: flex;
+    justify-content: center;
+}
+.price-card{
+    width: 20%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 3px solid goldenrod;
+    margin-bottom: 3rem;
+    box-shadow: 8px 16px 32px rgb(70, 67, 67);
+}
+.price-card p{
+    font-size: 2rem;
+    margin: 0;
+}
+.price-card ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.price-card .btn{
+    width: 50%;
+    height: 4vh;
+    background: goldenrod;
+    border: none;
+}
+.price-card .btn:hover{
+    color: goldenrod;
+    background: black;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    margin-bottom: 1rem;
+    box-shadow: 4px 8px 16px rgba(236, 186, 93, 0.89);
+}
+@media (max-width: 1100px){
+    :root{
+        font-size: 12px;
+    }
+}
+@media (max-width: 800px){
+    :root{
+        font-size: 10px;
+    }
+}
+@media (max-width: 500px){
+    :root{
+        font-size: 6px;
+    }
+}

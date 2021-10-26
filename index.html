@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Landing-Page</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+        <header id="header">
+            <div class="logo">
+                <img id="header-img" src="https://www.carlogos.org/logo/Chevrolet-logo.png" alt="Chevrolet-logo">
+                <h1>CHEVROLET</h1>
+            </div>
+
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#selection">Selection</a></li>
+                    <li><a class="nav-link" href="#review">Review</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="hero">
+            <h2>CHEVROLET,MALIBU</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+                <input id="submit" type="submit" value="Get Started" class="btn" />
+            </form>
+        </div>
+        <div id="container">
+            <section id="selection">
+                <img class="car-img" src="images/DARK-ASH.png" alt="Car Image">
+                <p>SELECT EXTERIOR:</p>
+                <section class="color-container">
+                    <a class="select-color black" onclick="imgSlider('images/DARK-ASH.png')"></a>
+                    <a class="select-color white" onclick="imgSlider('images/White.png')"></a>
+                    <a class="select-color red" onclick="imgSlider('images/Red.png')"></a>
+                </section>
+            </section>
+        </div>
+        <section id="review">
+            <iframe id="video"  width="560" height="315" src="https://www.youtube.com/embed/h4J9o4_lNEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+            <div class="price-card">
+                <p>Price</p>
+                <h2>$33,370</h2>
+                <ul>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ul>
+                <button class="btn">Buy</button>
+            </div>
+        </section>
+        <footer>CHEVROLET &copy; 2020</footer>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.car-img').src = anything;
+            }
+        </script>
+</body>
+</html>
